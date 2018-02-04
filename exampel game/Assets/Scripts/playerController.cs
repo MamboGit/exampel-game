@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerController : MonoBehaviour {
+public class playerController : MonoBehaviour
+{
 
     public float thrust;
     public float JumpHeight;
@@ -12,7 +13,8 @@ public class playerController : MonoBehaviour {
     Rigidbody rb;
 
 
-    void Start () {
+    void Start()
+    {
 
         rb = GetComponent<Rigidbody>();
 
@@ -22,9 +24,13 @@ public class playerController : MonoBehaviour {
         isGrounded = true;
 
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
+
 
         if (Input.GetKey("d"))
         {
@@ -66,6 +72,4 @@ public class playerController : MonoBehaviour {
 
 
 
-
 }
-
